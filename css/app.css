@@ -1,18 +1,22 @@
 body {
   background-color: grey;
   display: block;
+  margin: 0;
+  font-family: "monsterrat", "Avenir";
 }
 
 
 .colors {
   width: 30%;
-
-  /* display: flex; */
+  background-color: pink;
 
   padding-bottom: 30%;
   margin:1.66%;
   margin-bottom: 10px;
-  border-radius: 9px;
+  border-radius: 20px;
+  transition: background-color 1.0s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
 
 }
 
@@ -26,7 +30,56 @@ body {
 }
 
 h1 {
-  color: blue;
-  text-decoration: underline;
+  color: yellow;
   text-align: center;
+  background-color: purple;
+
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding: 20px 0;
+
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+.stripe {
+  margin: 0 auto;
+  background-color: white;
+  height: 40px;
+  text-align: center;
+
+}
+
+.selected {
+  background-color: purple;
+}
+
+#colorDisplay {
+
+  font-size: 200%;
+
+
+}
+
+button {
+  border: none;
+  backgroung: none,
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: purple;
+  font-size: inherit;
+  transition: all 0.5.0s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: purple;
 }
