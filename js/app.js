@@ -54,6 +54,8 @@ resetButton.addEventListener("click", function () {
   pickColor = pickedColor();
   // change the colorDisplay to match the new picked color
   colorDisplay.textContent = pickColor;
+  messageDisplay.textContent = ""
+  this.textContent = "New colors"
 // change colors of the square box
 for (let i = 0; i < color.length; i++) {
   color[i].style.backgroundColor = testColor[i]
@@ -74,6 +76,7 @@ for (let i = 0; i < color.length; i++) {
       ChangeColors(clickedColor);
       h1.style.backgroundColor = clickedColor;
       resetButton.textContent = "Play Again !!!!"
+
     }
     else {
      this.style.backgroundColor = "grey";
